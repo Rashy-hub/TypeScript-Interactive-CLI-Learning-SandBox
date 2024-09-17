@@ -1,10 +1,11 @@
 console.log('app.ts entry point - TypeScript RoadMap SandBox');
 const fs = require('fs');
 const path = require('path');
+import 'colors';
 import inquirer from 'inquirer';
 
 const loadManifest = (): Array<{ name: string; value: string }> => {
-  const filePath = path.join(__dirname, '../tableofcontent.json'); // Assurez-vous que le chemin est correct
+  const filePath = path.join(__dirname, '../tableofcontent.json');
   const fileContent = fs.readFileSync(filePath, 'utf8');
   return JSON.parse(fileContent);
 };
@@ -14,18 +15,20 @@ const loadChapter = async (chapter: string) => {
     const chapterModule = await import(`./${chapter}`);
     chapterModule.run(); // Every chapter.ts should have a run function !
   } catch (error) {
-    console.error(`Le chapitre ${chapter} n'a pas pu être chargé. ${error}`);
+    console.error(
+      `The chapter ${chapter} could not be loaded. 🚀 cause: ${error}`.bgRed
+        .white
+    );
   }
 };
 
-// Fonction pour exécuter un chapitre et proposer de revenir au menu
 const selectAndRunChapter = async () => {
   const chapters = loadManifest(); // Charger le manifeste
   const response = await inquirer.prompt([
     {
       type: 'list',
       name: 'chapter',
-      message: 'Quel chapitre souhaitez-vous exécuter ?',
+      message: 'Which chapter would you like to execute?🚀',
       choices: chapters
     }
   ]);
@@ -45,7 +48,7 @@ const runApp = async () => {
       {
         type: 'confirm',
         name: 'continueChoice',
-        message: 'Would you like to run another chapter ?',
+        message: 'Would you like to run another chapter ?🚀',
         default: false
       }
     ]);
@@ -53,7 +56,7 @@ const runApp = async () => {
     continueRunning = continueChoice;
   }
 
-  console.log('Thanks for using my app :) = press CTRL + C to quit ');
+  console.log('Thanks for using my app :) = press CTRL + C to quit '.bgYellow);
 };
 
 runApp();
