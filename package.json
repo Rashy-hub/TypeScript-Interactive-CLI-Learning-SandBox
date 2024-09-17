@@ -1,0 +1,27 @@
+{
+  "name": "typescript-roadmap-sandbox",
+  "version": "1.0.0",
+  "description": "sandbox demo",
+  "main": "dist/app.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/app.js",
+    "dev": "npx nodemon --exec ts-node src/app.ts",
+    "watch": "npx tsc --watch",
+    "prestart": "npm run build",
+    "lint": "npx eslint 'src/**/*.{ts,tsx}'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.4",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "colors": "^1.4.0",
+    "inquirer": "^11.0.1",
+    "typescript-roadmap-sandbox": "file:"
+  }
+}
