@@ -1,18 +1,18 @@
 # TypeScript Interactive CLI Learning Project
 
-Welcome to the TypeScript Interactive CLI Learning Project! This initiative is designed to offer an engaging and practical approach to learning TypeScript through a command-line interface. By working on this project, I deepened my understanding of TypeScript and aimed to create an interactive experience for others to explore TypeScript concepts via hands-on examples and exercises. This project was born out of a desire for a more dynamic and engaging way to learn coding.
+Welcome to the TypeScript **Interactive CLI** Learning Project! This initiative is designed to offer an engaging and practical approach to learning TypeScript through a command-line interface. By working on this project, I deepened my understanding of TypeScript and aimed to create an interactive experience for others to explore TypeScript concepts via hands-on examples and exercises. This project was born out of a desire for a more dynamic and engaging way to learn coding.
 
 ## Key Features:
 
-- Interactive CLI: Seamlessly navigate through various chapters with a user-friendly command-line interface.
-- Practical Examples: Each chapter provides actionable code examples to illustrate specific TypeScript concepts.
-- Colorful Output: Enhance your learning experience with color-coded console messages for improved readability.
+- **Interactive CLI**: Seamlessly navigate through various chapters with a **user-friendly** command-line interface.
+- **Practical Examples**: Each chapter provides actionable code examples to illustrate specific TypeScript concepts.
+- **Colorful Output**: Enhance your learning experience with color-coded console messages for improved readability.
 
 ## How It Works:
 
-- Interactive Menu: Upon running the application, you will see a menu allowing you to choose which chapter to explore.
-- Dynamic Imports: Chapters are dynamically loaded based on your selection, optimizing resource usage.
-- Error Handling: The application includes robust error handling to ensure a smooth experience, even if invalid options are chosen.
+- **Interactive Menu**: Upon running the application, you will see a menu allowing you to choose which chapter to explore.
+- **Dynamic Imports**: Chapters are dynamically loaded based on your selection, optimizing resource usage.
+- **Error Handling**: The application includes robust error handling to ensure a smooth experience, even if invalid options are chosen.
 
 ## Technical Overview
 
