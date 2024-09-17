@@ -53,7 +53,7 @@ npm run dev
 
 # Table of Contents: Mastering TypeScript
 
-## 1. Introduction to TypeScript
+## 1. [Introduction to TypeScript](./src/chapter_1.ts)
 
 - 1.1 What is TypeScript?
 - 1.2 Differences Between JavaScript and TypeScript
@@ -65,7 +65,7 @@ npm run dev
   - 1.4.4 Using TypeScript in Node.js Projects
   - 1.4.5 TypeScript in Web Projects (Frontend)
 
-## 2. Type Annotations & Basic Types
+## 2. [Type Annotations & Basic Types](./src/chapter_2.ts)
 
 - 2.1 Type Annotations Syntax
 - 2.2 Primitive Types
