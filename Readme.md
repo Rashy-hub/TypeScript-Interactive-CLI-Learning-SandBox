@@ -55,34 +55,24 @@ npm run dev
 
 ## 1. [Introduction to TypeScript](./src/chapter_1.ts)
 
-- 1.1 What is TypeScript?
-- 1.2 Differences Between JavaScript and TypeScript
-- 1.3 Advantages of Using TypeScript
-- 1.4 Setting Up a TypeScript Environment
-  - 1.4.1 Installing TypeScript
-  - 1.4.2 Configuring `tsconfig.json`
-  - 1.4.3 Compilation Process
-  - 1.4.4 Using TypeScript in Node.js Projects
-  - 1.4.5 TypeScript in Web Projects (Frontend)
+- 1.1 Setting Up a TypeScript Environment
+- 1.2 Configuring `tsconfig.json` & Compilation Process
+- 1.3 Using TypeScript in Node.js Projects
 
-## 2. [Type Annotations & Basic Types](./src/chapter_2.ts)
+## 2. [Type Annotations & Basic Types ](./src/chapter_2.ts)
 
 - 2.1 Type Annotations Syntax
-- 2.2 Primitive Types
-  - 2.2.1 `string`
-  - 2.2.2 `number`
-  - 2.2.3 `boolean`
-  - 2.2.4 `null` and `undefined`
-  - 2.2.5 `void`
-  - 2.2.6 `any`
-  - 2.2.7 `unknown`
-  - 2.2.8 `never`
+- 2.2 Primitive Types (`string`,`number`,`boolean`,`undefined`,`bigint`,`Symbol`,`null`)
+- 2.3 Top-Level Types - Special Types (`void`, `any`, `unknown`, `never`)
 - 2.3 Type Inference
-- 2.4 Arrays and Tuples
-  - 2.4.1 Typed Arrays
-  - 2.4.2 Tuples
 
-## 3. Object Types
+## 3. [Arrays & Tuples](./src/chapter_3.ts)
+
+- 3.1 Basic Arrays
+- 3.2 Typed Arrays
+- 3.3 Tuples
+
+## 4. Object Types
 
 - 3.1 Object Literals
 - 3.2 Interfaces
@@ -98,7 +88,7 @@ npm run dev
 - 3.6 Type Guards
 - 3.7 Type Assertions (Casting)
 
-## 4. Functions in TypeScript
+## 5. Functions in TypeScript
 
 - 4.1 Function Types
   - 4.1.1 Defining Types for Functions
@@ -109,7 +99,7 @@ npm run dev
 - 4.4 `this` in TypeScript Functions
 - 4.5 Function Overloads
 
-## 5. Classes and Object-Oriented Programming (OOP)
+## 6. Classes and Object-Oriented Programming (OOP)
 
 - 5.1 Introduction to Classes
 - 5.2 Class Members
@@ -124,7 +114,7 @@ npm run dev
 - 5.9 Static Methods and Properties
 - 5.10 Class Decorators
 
-## 6. Modules and Namespaces
+## 7. Modules and Namespaces
 
 - 6.1 Module System Overview
   - 6.1.1 ES Modules vs. CommonJS
@@ -133,7 +123,7 @@ npm run dev
   - 6.2.1 Declaring Namespaces
   - 6.2.2 Merging Namespaces with Classes and Functions
 
-## 7. Generics
+## 8. Generics
 
 - 7.1 Introduction to Generics
   - 7.1.1 Why Use Generics?
@@ -144,7 +134,7 @@ npm run dev
   - 7.5.1 Extending Types in Generics
   - 7.5.2 Using `keyof` with Generics
 
-## 8. Advanced Types
+## 9. Advanced Types
 
 - 8.1 Mapped Types
 - 8.2 Conditional Types
@@ -160,21 +150,21 @@ npm run dev
   - 8.4.8 `ReturnType` and `InstanceType`
 - 8.5 Discriminated Unions
 
-## 9. TypeScript with Asynchronous Code
+## 10. TypeScript with Asynchronous Code
 
 - 9.1 Working with Promises
 - 9.2 `async` and `await`
 - 9.3 Typing Callbacks and Promises
 - 9.4 Error Handling with Async Functions
 
-## 10. Enums
+## 11. Enums
 
 - 10.1 Numeric Enums
 - 10.2 String Enums
 - 10.3 Heterogeneous Enums
 - 10.4 Enums with Computed and Constant Members
 
-## 11. Decorators
+## 12. Decorators
 
 - 11.1 Introduction to Decorators
   - 11.1.1 What are Decorators?
@@ -185,7 +175,7 @@ npm run dev
 - 11.5 Parameter Decorators
 - 11.6 Combining Multiple Decorators
 
-## 12. TypeScript and Tooling
+## 13. TypeScript and Tooling
 
 - 12.1 TypeScript Compiler Options
   - 12.1.1 Strict Mode (`strictNullChecks`, `strictFunctionTypes`)
@@ -195,7 +185,7 @@ npm run dev
 - 12.3 Bundling with Webpack and TypeScript
 - 12.4 Type Checking in CI/CD Pipelines
 
-## 13. TypeScript and Testing
+## 14. TypeScript and Testing
 
 - 13.1 Unit Testing TypeScript Code
   - 13.1.1 Writing Tests in TypeScript
@@ -203,7 +193,7 @@ npm run dev
 - 13.2 Mocking and Stubbing in TypeScript
 - 13.3 Testing with TypeScript and React (Using Enzyme and React Testing Library)
 
-## 14. TypeScript in Frontend Development
+## 15. TypeScript in Frontend Development
 
 - 14.1 Using TypeScript with React
   - 14.1.1 TypeScript and JSX/TSX
@@ -217,7 +207,7 @@ npm run dev
   - 14.3.1 Vue 3 Composition API and TypeScript
   - 14.3.2 Class-Based Components in TypeScript
 
-## 15. TypeScript in Backend Development
+## 16. TypeScript in Backend Development
 
 - 15.1 Using TypeScript with Node.js
   - 15.1.1 Setting Up TypeScript in Node.js
@@ -227,7 +217,7 @@ npm run dev
 - 15.3 Working with REST APIs in TypeScript
 - 15.4 TypeScript with Serverless Functions
 
-## 16. Advanced Patterns in TypeScript
+## 17. Advanced Patterns in TypeScript
 
 - 16.1 Dependency Injection
 - 16.2 Singleton Pattern
@@ -236,14 +226,14 @@ npm run dev
 - 16.5 Strategy Pattern
 - 16.6 Factory Pattern
 
-## 17. Migrating JavaScript to TypeScript
+## 18. Migrating JavaScript to TypeScript
 
 - 17.1 Step-by-Step Migration Guide
 - 17.2 Converting JavaScript Files to TypeScript (`.js` to `.ts`)
 - 17.3 Handling Third-Party JavaScript Libraries
 - 17.4 Gradual TypeScript Adoption
 
-## 18. Best Practices
+## 19. Best Practices
 
 - 18.1 Writing Clean and Maintainable TypeScript Code
 - 18.2 Structuring Large TypeScript Projects
@@ -252,7 +242,7 @@ npm run dev
 - 18.5 Handling Legacy Codebases
 - 18.6 Debugging TypeScript Applications
 
-## 19. TypeScript Ecosystem
+## 20. TypeScript Ecosystem
 
 - 19.1 DefinitelyTyped and Typings for External Libraries
 - 19.2 TypeScript Compiler API
@@ -260,7 +250,7 @@ npm run dev
   - 19.3.1 Contributing to TypeScript
   - 19.3.2 Popular Libraries Written in TypeScript
 
-## 20. Conclusion
+## 21. Conclusion
 
 - 20.1 Future of TypeScript
 - 20.2 Staying Up-to-Date with TypeScript Releases
