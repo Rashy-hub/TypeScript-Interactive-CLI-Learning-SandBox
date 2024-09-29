@@ -28,7 +28,7 @@ const selectAndRunChapter = async () => {
     {
       type: 'list',
       name: 'chapter',
-      message: 'Which chapter would you like to execute?🚀',
+      message: '\n\nWhich chapter would you like to execute?🚀 \n\n'.red,
       choices: chapters
     }
   ]);
