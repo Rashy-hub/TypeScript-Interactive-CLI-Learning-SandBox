@@ -1,7 +1,7 @@
 import 'colors';
 
 export const run = () => {
-  console.log('chapter 1 -  Introduction to TypeScript');
+  console.log('chapter 1 -  Introduction to TypeScript'.bold);
   //⚠ npm install -g typescript => install globally typescript
   //⚠ tsc --init => initialize a typescript project with tsconfig.json
 
